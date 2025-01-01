@@ -1,10 +1,9 @@
 import { User } from "../models/user.model.js";
 
-export const authCallback = (req, res) => {
+export const authCallback = (req, res, next) => {
     async (req, res) => {
         try {
             const { id, firstName, lastName, imageUrl } = req.body;
-    
     
             const user = await User.findOne({clerkId: id}); //check if user already exist
             if(!user) {
@@ -17,7 +16,7 @@ export const authCallback = (req, res) => {
             res.status(200).json({success: true});
         } catch (error) {
             console.log('Error in auth callback', error);
-            res.status(500).json({message: 'Internal server error', error});
+            next(error);
         }
     }
 }

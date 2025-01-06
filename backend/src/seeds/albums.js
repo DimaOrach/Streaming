@@ -132,31 +132,31 @@ const seedDatabase = async () => {
 		// Create albums with references to song IDs
 		const albums = [
 			{
-				title: "Urban Nights",
-				artist: "Various Artists",
+				title: "The Slim Shady LP",
+				artist: "Eminem",
 				imageUrl: "/albums/1.jpg",
-				releaseYear: 2024,
+				releaseYear: 1999,
 				songs: createdSongs.slice(0, 4).map((song) => song._id),
 			},
 			{
-				title: "Coastal Dreaming",
-				artist: "Various Artists",
+				title: "The Marshall Mathers LP",
+				artist: "Eminem",
 				imageUrl: "/albums/2.jpg",
-				releaseYear: 2024,
+				releaseYear: 2000,
 				songs: createdSongs.slice(4, 8).map((song) => song._id),
 			},
 			{
-				title: "Midnight Sessions",
-				artist: "Various Artists",
+				title: "The Eminem Show",
+				artist: "Eminem",
 				imageUrl: "/albums/3.jpg",
-				releaseYear: 2024,
+				releaseYear: 2002,
 				songs: createdSongs.slice(8, 11).map((song) => song._id),
 			},
 			{
-				title: "Eastern Dreams",
-				artist: "Various Artists",
+				title: "Encore",
+				artist: "Eminem",
 				imageUrl: "/albums/4.jpg",
-				releaseYear: 2024,
+				releaseYear: 2004,
 				songs: createdSongs.slice(11, 14).map((song) => song._id),
 			},
 		];

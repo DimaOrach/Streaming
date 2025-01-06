@@ -6,4 +6,4 @@ const router = Router();
 
 router.post('/callback', authCallback);
 
-export default router
+export default router;

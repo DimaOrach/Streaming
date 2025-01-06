@@ -6,14 +6,16 @@ import { protectRoute, requireAdmin } from '../middleware/auth.middleware.js';
 
 const router = Router();
 
-router.get('/check', protectRoute, requireAdmin, checkAdmin);
+router.use(protectRoute, requireAdmin);
+
+router.get('/check', checkAdmin);
 
 //Songs
-router.post('/songs', protectRoute, requireAdmin, createSong); //if login and if admin, can create song
-router.delete('/songs/:id', protectRoute, requireAdmin, deleteSong);
+router.post('/songs', createSong); //if login and if admin, can create song
+router.delete('/songs/:id', deleteSong);
 
 //Albums
-router.post('/albums', protectRoute, requireAdmin, createAlbum);
-router.delete('/songs/:id', protectRoute, requireAdmin, deleteAlbum);
+router.post('/albums', createAlbum);
+router.delete('/albums/:id', deleteAlbum);
 
-export default router
+export default router;

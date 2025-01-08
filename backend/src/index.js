@@ -38,7 +38,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/admin/songs', adminRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/songs', songRoutes);
-app.use('/api/albums', albumRoutes);
+app.use("/api/albums", albumRoutes);
 app.use('/api/stats', statRoutes);
 app.use((err, req, res, next) => {
   res.status(500).json(

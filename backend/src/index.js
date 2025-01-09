@@ -35,7 +35,7 @@ app.use(fileUpload({                      //creating temporary folder for img/au
 }));
 
 app.use('/api/users', userRoutes);
-app.use('/api/admin/songs', adminRoutes);
+app.use('/api/admin', adminRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/songs', songRoutes);
 app.use("/api/albums", albumRoutes);

@@ -16,12 +16,83 @@ const seedDatabase = async () => {
     // First, create all songs
     const createdSongs = await Song.insertMany([
       {
-        title: "Role Model",
-        artist: "Eminem",
+        title: "My Name Is",  
+        artist: "Eminem", 
         imageUrl: "/cover-images/1.jpg",
         audioUrl: "/songs/1.mp3",
-        duration: 46, // 0:46
+        duration: 272, // 4:32
       },
+{
+        title: "Guilty Conscience",  
+        artist: "Eminem feat. Dr. Dre", 
+        imageUrl: "/cover-images/1.jpg",
+        audioUrl: "/songs/1.mp3",
+        duration: 203, // 3:23
+      },
+{
+        title: "Brain Damage",  
+        artist: "Eminem", 
+        imageUrl: "/cover-images/1.jpg",
+        audioUrl: "/songs/1.mp3",
+        duration: 210, // 3:30
+      },
+{
+        title: "Role Model",  
+        artist: "Eminem", 
+        imageUrl: "/cover-images/1.jpg",
+        audioUrl: "/songs/1.mp3",
+        duration: 216, // 3:36
+      },
+{
+        title: "If I Had",  
+        artist: "Eminem", 
+        imageUrl: "/cover-images/1.jpg",
+        audioUrl: "/songs/1.mp3",
+        duration: 241, // 4:01
+      },
+{
+        title: "97' Bonnie & Clyde",  
+        artist: "Eminem", 
+        imageUrl: "/cover-images/1.jpg",
+        audioUrl: "/songs/1.mp3",
+        duration: 309, // 5:09
+      },
+{
+        title: "Just Don't Give a F***",  
+        artist: "Eminem", 
+        imageUrl: "/cover-images/1.jpg",
+        audioUrl: "/songs/1.mp3",
+        duration: 245, // 4:05
+      },
+{
+        title: "As the World Turns",  
+        artist: "Eminem", 
+        imageUrl: "/cover-images/1.jpg",
+        audioUrl: "/songs/1.mp3",
+        duration: 271, // 4:31
+      },
+{
+        title: "I'm Shady",  
+        artist: "Eminem", 
+        imageUrl: "/cover-images/1.jpg",
+        audioUrl: "/songs/1.mp3",
+        duration: 213, // 3:33
+      },
+{
+        title: "Bad Meets Evil",  
+        artist: "Eminem feat. Royce da 5'9\"", 
+        imageUrl: "/cover-images/1.jpg",
+        audioUrl: "/songs/1.mp3",
+        duration: 246, // 4:06
+      },
+{
+        title: "Still Don't Give a F***",  
+        artist: "Eminem", 
+        imageUrl: "/cover-images/1.jpg",
+        audioUrl: "/songs/1.mp3",
+        duration: 279, // 4:39
+      },
+
       {
         title: "Criminal",
         artist: "Eminem",
@@ -66,9 +137,16 @@ const seedDatabase = async () => {
       },
       {
         title: "Framed",
-        artist: "Eminem feat. Rihanna",
+        artist: "Eminem",
         imageUrl: "/cover-images/8.jpg",
         audioUrl: "/songs/8.mp3",
+        duration: 64, // 1:04
+      },
+      {
+        title: "Fall",
+        artist: "Eminem",
+        imageUrl: "/cover-images/10.jpg",
+        audioUrl: "/songs/10.mp3",
         duration: 64, // 1:04
       },
       {
@@ -78,13 +156,6 @@ const seedDatabase = async () => {
         audioUrl: "/songs/9.mp3",
         duration: 53, // 0:53
       },
-    //   {
-    //     title: "When I'm Gone",
-    //     artist: "Eminem",
-    //     imageUrl: "/cover-images/10.jpg",
-    //     audioUrl: "/songs/10.mp3",
-    //     duration: 58, // 0:58
-    //   },
       {
         title: "Houdini",
         artist: "Eminem",
@@ -150,28 +221,77 @@ const seedDatabase = async () => {
         artist: "Eminem",
         imageUrl: "/albums/1.jpg",
         releaseYear: 1999,
-        songs: createdSongs.slice(0, 4).map((song) => song._id), // Assign first 4 songs
+        songs: createdSongs.slice(0, 11).map((song) => song._id), 
       },
       {
         title: "The Marshall Mathers LP",
         artist: "Eminem",
         imageUrl: "/albums/2.jpg",
         releaseYear: 2000,
-        songs: createdSongs.slice(4, 8).map((song) => song._id), // Assign next 4 songs
+        songs: createdSongs.slice(11, 12).map((song) => song._id), 
       },
       {
         title: "The Eminem Show",
         artist: "Eminem",
         imageUrl: "/albums/3.jpg",
         releaseYear: 2002,
-        songs: createdSongs.slice(8, 12).map((song) => song._id), // Assign next 4 songs
+        songs: createdSongs.slice(12, 13).map((song) => song._id),
+      },
+      {
+        title: "Encore",
+        artist: "Eminem",
+        imageUrl: "/albums/4.jpg",
+        releaseYear: 2004,
+        songs: createdSongs.slice(13, 14).map((song) => song._id), 
+      },
+      {
+        title: "Relapse",
+        artist: "Eminem",
+        imageUrl: "/albums/5.jpg",
+        releaseYear: 2009,
+        songs: createdSongs.slice(14, 15).map((song) => song._id),
       },
       {
         title: "Recovery",
         artist: "Eminem",
-        imageUrl: "/albums/4.jpg",
+        imageUrl: "/albums/6.jpg",
         releaseYear: 2010,
-        songs: createdSongs.slice(12, 16).map((song) => song._id), // Assign last 4 songs
+        songs: createdSongs.slice(15, 16).map((song) => song._id), 
+      },
+      {
+        title: "The Marshall Mathers LP 2",
+        artist: "Eminem",
+        imageUrl: "/albums/7.jpg",
+        releaseYear: 2013,
+        songs: createdSongs.slice(16, 17).map((song) => song._id),
+      },
+      {
+        title: "Revival",
+        artist: "Eminem",
+        imageUrl: "/albums/8.jpg",
+        releaseYear: 2017,
+        songs: createdSongs.slice(17, 18).map((song) => song._id), 
+      },
+      {
+        title: "Kamikaze",
+        artist: "Eminem",
+        imageUrl: "/albums/10.jpg",
+        releaseYear: 2018,
+        songs: createdSongs.slice(18, 19).map((song) => song._id), 
+      },
+      {
+        title: "Music to Be Murdered By",
+        artist: "Eminem",
+        imageUrl: "/albums/9.jpg",
+        releaseYear: 2020,
+        songs: createdSongs.slice(19, 20).map((song) => song._id), 
+      },
+      {
+        title: "The Death of Slim Shady",
+        artist: "Eminem",
+        imageUrl: "/albums/11.jpg",
+        releaseYear: 2024,
+        songs: createdSongs.slice(20, 21).map((song) => song._id), 
       },
     ];
 

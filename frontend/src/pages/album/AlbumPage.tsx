@@ -83,7 +83,7 @@ const AlbumPage = () => {
 									<Pause className='h-7 w-7 text-black' />
 								) : (
 									<Play className='h-7 w-7 text-black' />
-								)};
+								)}
 							</Button>
 						</div>
 
@@ -96,7 +96,7 @@ const AlbumPage = () => {
 							>
 								<div>#</div>
 								<div>Title</div>
-								<div>Released Date</div>
+								<div>Song added date</div>
 								<div>
 									<Clock className='h-4 w-4' />
 								</div>

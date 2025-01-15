@@ -13,7 +13,7 @@ const formatTime = (seconds: number) => {
 const PlaybackControls = () => {
     const { currentSong, isPlaying, togglePlay, playNext, playPrevious } = usePlayerStore();
 
-    const [volume, setVolume] = useState(75);
+    const [volume, setVolume] = useState(100);
     const [currentTime, setCurrentTime] = useState(0);
     const [duration, setDuration] = useState(0);
     const audioRef = useRef<HTMLAudioElement | null>(null);

@@ -11,6 +11,8 @@ export interface Song {
 }
 
 export interface Album {
+	albumId: string | undefined;
+    createdAt: any;
 	_id: string;
 	title: string;
 	artist: string;

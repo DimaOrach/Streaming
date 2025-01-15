@@ -6,6 +6,7 @@ import MainLayout from "./layout/MainLayout";
 import ChatPage from "./pages/chat/ChatPage";
 import AlbumPage from "./pages/album/AlbumPage";
 import AdminPage from "./pages/admin/AdminPage";
+import { Toaster } from "react-hot-toast";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
 
         </Route>
       </Routes>
+      <Toaster />
     </>
     )
   }

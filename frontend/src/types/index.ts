@@ -1,4 +1,6 @@
 export interface Song {
+    songs: any;
+    releaseYear: ReactNode;
     _id: string;
 	title: string;
 	artist: string;

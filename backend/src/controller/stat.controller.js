@@ -12,8 +12,8 @@ export const getStats = async (req, res, next) => {
                 //Fetch all song, all albums, group them with artist, count number of artists
                 Song.aggregate([
                     {
-                        $unionWith:{
-                            call:'albums',
+                        $unionWith: {
+                            coll: 'albums', // Неправильний ключ
                             pipeline: [],
                         }
                     },

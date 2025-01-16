@@ -3,7 +3,7 @@ import {Song} from '../models/song.model.js';
 export const getAllSongs = async (req, res, next) => {
     try {
         const song = await Song.find().sort({createdAt: -1}); //.sort - newest song at top, oldest at bottom
-        res.json(songs);
+        res.json(song);
     } catch (error) {
         next(error);
     }

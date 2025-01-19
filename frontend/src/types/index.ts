@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface Song {
     songs: any;
     releaseYear: ReactNode;

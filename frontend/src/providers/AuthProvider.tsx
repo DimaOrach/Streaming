@@ -2,7 +2,7 @@ import { axiosInstance } from "@/lib/axios";
 import { useAuthStore } from "@/stores/useAuthStore";
 import { useChatStore } from "@/stores/useChatStore";
 import { useAuth } from "@clerk/clerk-react"
-import { Loader, LucideLoader2 } from "lucide-react";
+import { Loader } from "lucide-react";
 import { useEffect, useState } from "react";
 
 //everytime page updates, tocken will be checked

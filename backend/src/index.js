@@ -25,7 +25,7 @@ const __dirname = path.resolve();
 const httpServer = createServer(app);
 initializeSocket(httpServer);
 
-app.use(express(json));
+app.use(express.json());
 app.use(cors(
   {
     origin: 'http://localhost:3000',

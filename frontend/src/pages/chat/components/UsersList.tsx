@@ -25,7 +25,8 @@ const UsersList = () => {
 									<div className='relative'>
 										<Avatar className='size-8 md:size-12'>
 											<AvatarImage src={user.imageUrl} />
-											<AvatarFallback>{user.fullName[0]}</AvatarFallback>
+											<AvatarFallback>{user.fullName?.[0] || "?"}</AvatarFallback>
+
 										</Avatar>
 										
                                         {/* online indicator */}
